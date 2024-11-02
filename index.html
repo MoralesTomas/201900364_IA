@@ -58,10 +58,12 @@
 
             <div id="controls-container" style="width: 45%;">
                 <input type="file" id="linear--file" accept=".csv">
-                <button id="linear--btn-fit" type="button">Fit</button>
-                <button id="linear--btn-predict" type="button" disabled>Predict</button>
-                <button id="linear--btn-mse" type="button" disabled>MSE</button>
-                <button id="linear--btn-r2" type="button" disabled>Coeficiente R2</button>
+                <div id="button-container">
+                    <button id="linear--btn-fit" type="button">Fit</button>
+                    <button id="linear--btn-predict" type="button" disabled>Predict</button>
+                    <button id="linear--btn-mse" type="button" disabled>MSE</button>
+                    <button id="linear--btn-r2" type="button" disabled>Coeficiente R2</button>
+                </div>
                 <div id="results-container">
                     <h3>Resultados</h3>
                     <p id="fit-result"></p>
@@ -121,9 +123,11 @@
                 <input type="file" id="training-file" accept=".csv">
                 <label for="predict-file">Cargar archivo CSV para Predicción (opcional):</label>
                 <input type="file" id="predict-file" accept=".csv">
-                <button id="btngenerate" type="button">Generar Árbol</button>
-                <button id="predict" type="button">Predecir</button>
-                <div id="results-container">
+                <div id="button-container">
+                    <button id="btngenerate" type="button">Generar Árbol</button>
+                    <button id="predict" type="button">Predecir</button>
+                </div>
+                    <div id="results-container">
                     <h3>Resultados</h3>
                     <p id="prediction"></p>
                 </div>
@@ -144,11 +148,13 @@
             <div id="controls-container" style="width: 45%;">
                 <input type="file" id="polynomial--file" accept=".csv">
                 <input type="number" id="polynomial-degree" placeholder="Grado del polinomio" min="1" />
-                <button id="polynomial--btn-fit" type="button">Fit</button>
-                <button id="polynomial--btn-predict" type="button" disabled>Predict</button>
-                <button id="polynomial--btn-mse" type="button" disabled>MSE</button>
-                <button id="polynomial--btn-r2" type="button" disabled>Coeficiente R2</button>
-                <div id="results-container">
+                <div id="button-container">
+                    <button id="polynomial--btn-fit" type="button">Fit</button>
+                    <button id="polynomial--btn-predict" type="button" disabled>Predict</button>
+                    <button id="polynomial--btn-mse" type="button" disabled>MSE</button>
+                    <button id="polynomial--btn-r2" type="button" disabled>Coeficiente R2</button>
+                </div>
+                    <div id="results-container">
                     <h3>Resultados</h3>
                     <p id="poly-fit-result"></p>
                     <p id="poly-predict-result"></p>

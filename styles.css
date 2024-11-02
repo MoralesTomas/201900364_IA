@@ -123,3 +123,7 @@ label {
   gap: 10px;
   margin-bottom: 20px;
 }
+#button-container {
+  display: flex;
+  gap: 10px; /* Espacio entre los botones */
+}
